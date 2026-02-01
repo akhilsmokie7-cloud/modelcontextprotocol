@@ -1,4 +1,35 @@
-# Perplexity API Platform MCP Server
+2026-01-28T18:51:47.2669128Z Post job cleanup.
+/usr/bin/git version
+git version 2.52.0
+Temporarily overriding HOME='/home/runner/work/_temp/993642d1-e9ad-45df-93ba-b7431ebe83bb' before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+/usr/bin/git config --global --add safe.directory /home/runner/work/modelcontextprotocol/modelcontextprotocol
+Removing SSH command configuration
+/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Removing HTTP extra header
+/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Removing includeIf entries pointing to credentials config files
+/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+includeif.gitdir:/home/runner/work/modelcontextprotocol/modelcontextprotocol/.git.path
+includeif.gitdir:/home/runner/work/modelcontextprotocol/modelcontextprotocol/.git/worktrees/*.path
+includeif.gitdir:/github/workspace/.git.path
+includeif.gitdir:/github/workspace/.git/worktrees/*.path
+/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/modelcontextprotocol/modelcontextprotocol/.git.path
+/home/runner/work/_temp/git-credentials-1b26e5ac-7fc1-4bb3-a2e5-2b99db05898c.config
+/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/modelcontextprotocol/modelcontextprotocol/.git.path /home/runner/work/_temp/git-credentials-1b26e5ac-7fc1-4bb3-a2e5-2b99db05898c.config
+/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/modelcontextprotocol/modelcontextprotocol/.git/worktrees/*.path
+/home/runner/work/_temp/git-credentials-1b26e5ac-7fc1-4bb3-a2e5-2b99db05898c.config
+/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/modelcontextprotocol/modelcontextprotocol/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-1b26e5ac-7fc1-4bb3-a2e5-2b99db05898c.config
+/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+/github/runner_temp/git-credentials-1b26e5ac-7fc1-4bb3-a2e5-2b99db05898c.config
+/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-1b26e5ac-7fc1-4bb3-a2e5-2b99db05898c.config
+/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+/github/runner_temp/git-credentials-1b26e5ac-7fc1-4bb3-a2e5-2b99db05898c.config
+/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-1b26e5ac-7fc1-4bb3-a2e5-2b99db05898c.config
+/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Removing credentials config '/home/runner/work/_temp/git-credentials-1b26e5ac-7fc1-4bb3-a2e5-2b99db05898c.config'# Perplexity API Platform MCP Server
 
 [![Install in Cursor](https://custom-icon-badges.demolab.com/badge/Install_in_Cursor-000000?style=for-the-badge&logo=cursor-ai-white)](https://cursor.com/en/install-mcp?name=perplexity&config=eyJ0eXBlIjoic3RkaW8iLCJjb21tYW5kIjoibnB4IiwiYXJncyI6WyIteSIsIkBwZXJwbGV4aXR5LWFpL21jcC1zZXJ2ZXIiXSwiZW52Ijp7IlBFUlBMRVhJVFlfQVBJX0tFWSI6IiJ9fQ==)
 &nbsp;
