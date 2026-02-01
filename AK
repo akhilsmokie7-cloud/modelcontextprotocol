@@ -1,0 +1,52 @@
+2026-01-28T18:51:46.4364804Z ##[group]Run ./mcp-publisher login github-oidc
+./mcp-publisher login github-oidc
+shell: /usr/bin/bash -e {0}
+Logging in with github-oidc...
+✓ Successfully logged in2026-01-28T18:51:46.8588952Z ##[group]Run ./mcp-publisher publish
+./mcp-publisher publish
+shell: /usr/bin/bash -e {0}
+Publishing to https://registry.modelcontextprotocol.io...
+✓ Successfully published
+✓ Server io.github.perplexityai/mcp-server version 0.6.22026-01-28T18:51:47.4774850Z Cleaning up orphan processes2026-01-28T18:51:47.2669128Z Post job cleanup.
+/usr/bin/git version
+git version 2.52.0
+Temporarily overriding HOME='/home/runner/work/_temp/993642d1-e9ad-45df-93ba-b7431ebe83bb' before making global git config changes
+Adding repository directory to the temporary git global config as a safe directory
+/usr/bin/git config --global --add safe.directory /home/runner/work/modelcontextprotocol/modelcontextprotocol
+Removing SSH command configuration
+/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+Removing HTTP extra header
+/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+Removing includeIf entries pointing to credentials config files
+/usr/bin/git config --local --name-only --get-regexp ^includeIf\.gitdir:
+includeif.gitdir:/home/runner/work/modelcontextprotocol/modelcontextprotocol/.git.path
+includeif.gitdir:/home/runner/work/modelcontextprotocol/modelcontextprotocol/.git/worktrees/*.path
+includeif.gitdir:/github/workspace/.git.path
+includeif.gitdir:/github/workspace/.git/worktrees/*.path
+/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/modelcontextprotocol/modelcontextprotocol/.git.path
+/home/runner/work/_temp/git-credentials-1b26e5ac-7fc1-4bb3-a2e5-2b99db05898c.config
+/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/modelcontextprotocol/modelcontextprotocol/.git.path /home/runner/work/_temp/git-credentials-1b26e5ac-7fc1-4bb3-a2e5-2b99db05898c.config
+/usr/bin/git config --local --get-all includeif.gitdir:/home/runner/work/modelcontextprotocol/modelcontextprotocol/.git/worktrees/*.path
+/home/runner/work/_temp/git-credentials-1b26e5ac-7fc1-4bb3-a2e5-2b99db05898c.config
+/usr/bin/git config --local --unset includeif.gitdir:/home/runner/work/modelcontextprotocol/modelcontextprotocol/.git/worktrees/*.path /home/runner/work/_temp/git-credentials-1b26e5ac-7fc1-4bb3-a2e5-2b99db05898c.config
+/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git.path
+/github/runner_temp/git-credentials-1b26e5ac-7fc1-4bb3-a2e5-2b99db05898c.config
+/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git.path /github/runner_temp/git-credentials-1b26e5ac-7fc1-4bb3-a2e5-2b99db05898c.config
+/usr/bin/git config --local --get-all includeif.gitdir:/github/workspace/.git/worktrees/*.path
+/github/runner_temp/git-credentials-1b26e5ac-7fc1-4bb3-a2e5-2b99db05898c.config
+/usr/bin/git config --local --unset includeif.gitdir:/github/workspace/.git/worktrees/*.path /github/runner_temp/git-credentials-1b26e5ac-7fc1-4bb3-a2e5-2b99db05898c.config
+/usr/bin/git submodule foreach --recursive git config --local --show-origin --name-only --get-regexp remote.origin.url
+Removing credentials config '/home/runner/work/_temp/git-credentials-1b26e5ac-7fc1-4bb3-a2e5-2b99db05898c.config'2026-01-28T18:51:46.0224933Z ##[group]Run curl -L "https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_$(uname -s | tr '[:upper:]' '[:lower:]')_$(uname -m | sed 's/x86_64/amd64/;s/aarch64/arm64/').tar.gz" | tar xz mcp-publisher
+curl -L "https://github.com/modelcontextprotocol/registry/releases/latest/download/mcp-publisher_$(uname -s | tr '[:upper:]' '[:lower:]')_$(uname -m | sed 's/x86_64/amd64/;s/aarch64/arm64/').tar.gz" | tar xz mcp-publisher
+shell: /usr/bin/bash -e {0}
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
+
+100 6581k  100 6581k    0     0  16.8M      0 --:--:-- --:--:-- --:--:-- 16.8M
